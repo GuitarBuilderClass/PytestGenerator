@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+pytest-timeout = "*"
+autopep8 = "*"
+yapf = "*"
+isort = "*"
+
+[packages]
+env = "*"
+selenium = "*"
+numpy = "==1.15.4"
+scipy = "*"
+scikit-learn = "==0.20.3"
+beautifulsoup4 = "*"
+
+[requires]
+python_version = "3.4"
