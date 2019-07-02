@@ -18,6 +18,7 @@ beautifulsoup4 = "*"
 pytest = "*"
 pytest-timeout = "*"
 pyyaml = "*"
+requests = "*"
 
 [requires]
 python_version = "3.4"
