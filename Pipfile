@@ -4,8 +4,6 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pytest = "*"
-pytest-timeout = "*"
 autopep8 = "*"
 yapf = "*"
 isort = "*"
@@ -17,6 +15,9 @@ numpy = "==1.15.4"
 scipy = "==1.2.1"
 scikit-learn = "==0.20.3"
 beautifulsoup4 = "*"
+pytest = "*"
+pytest-timeout = "*"
+pyyaml = "*"
 
 [requires]
 python_version = "3.4"

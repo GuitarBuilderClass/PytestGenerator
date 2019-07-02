@@ -1,0 +1,10 @@
+AtCoder:
+  login: password
+  login_url: https://atcoder.jp/login
+  id: <your_id>
+  pass: <your_password>
+Paiza:
+  login: <your_choice>
+  login_url: https://paiza.co.jp
+  id: <your_id>
+  pass: <your_password>

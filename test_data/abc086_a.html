@@ -1,0 +1,1287 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>PracticeA - Welcome to AtCoder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content='ja'>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google-site-verification" content="nXGC_JxO0yoP1qBzMnYD_xgufO6leSLw1kyNo2HZltM" />
+
+
+    <meta name="description" content="プログラミング初級者から上級者まで楽しめる、プログラミングコンテストサイト「AtCoder」。オンラインで毎週開催プログラミングコンテストを開催しています。競技プログラミングを用いて、客観的に自分のスキルを計ることのできるサービスです。">
+    <meta name="author" content="AtCoder Inc.">
+    <link rel="canonical" href="https://atcoder.jp/">
+
+    <meta property="og:site_name" content="AtCoder">
+
+    <meta property="og:title" content="PracticeA - Welcome to AtCoder" />
+    <meta property="og:description" content="プログラミング初級者から上級者まで楽しめる、プログラミングコンテストサイト「AtCoder」。オンラインで毎週開催プログラミングコンテストを開催しています。競技プログラミングを用いて、客観的に自分のスキルを計ることのできるサービスです。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://atcoder.jp/contests/abs/tasks/practice_1" />
+    <meta property="og:image" content="https://img.atcoder.jp/assets/atcoder.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@atcoder" />
+
+    <meta property="twitter:title" content="PracticeA - Welcome to AtCoder" />
+
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href='/public/css/bootstrap.min.css?v=201906011609'>
+    <link rel="stylesheet" type="text/css" href='/public/css/base.css?v=201906011609'>
+    <link rel="shortcut icon" type="image/png" href="//img.atcoder.jp/assets/favicon.png">
+    <link rel="apple-touch-icon" href="//img.atcoder.jp/assets/atcoder.png">
+    <script src='/public/js/lib/jquery-1.9.1.min.js?v=201906011609'></script>
+    <script src='/public/js/lib/bootstrap.min.js?v=201906011609'></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/2.1.4/js.cookie.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/locale/ja.js"></script>
+    <script>
+        var LANG = "ja";
+        var userScreenName = "luthierBG";
+    </script>
+    <script src='/public/js/utils.js?v=201906011609'></script>
+
+
+    <script src='/public/js/contest.js?v=201906011609'></script>
+    <link href='/public/css/contest.css?v=201906011609' rel="stylesheet" />
+    <script>
+        var contestScreenName = "abs";
+        var remainingText = "残り時間";
+        var countDownText = "開始まであと";
+        var startTime = moment("2018-03-14T12:00:00+09:00");
+        var endTime = moment("4018-03-14T21:00:00+09:00");
+    </script>
+    <style></style>
+
+
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({messageStyle:"none",tex2jax:{skipTags:["script","noscript","style","textarea","code"],inlineMath:[['\\(','\\)']]}});</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <script src='/public/js/task.js?v=201906011609'></script>
+
+
+
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.min.css" rel="stylesheet" />
+    <script src='/public/js/lib/select2.min.js?v=201906011609'></script>
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.38.0/codemirror.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.38.0/codemirror.min.js"></script>
+    <script src='/public/js/codeMirror/merged.js?v=201906011609'></script>
+
+
+    <script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+
+
+
+
+
+
+
+
+
+    <script src='/public/js/base.js?v=201906011609'></script>
+    <script src='/public/js/ga.js?v=201906011609'></script>
+</head>
+
+<body>
+<div id="modal-contest-start" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">コンテスト開始</h4>
+            </div>
+            <div class="modal-body">
+                <p>AtCoder Beginners Selectionが開始されました。</p>
+            </div>
+            <div class="modal-footer">
+
+                <a class="btn btn-primary" href='/contests/abs/tasks'>問題一覧ページへ移動</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modal-contest-end" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">コンテスト終了</h4>
+            </div>
+            <div class="modal-body">
+                <p>AtCoder Beginners Selectionは終了しました。</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main-div" class="float-container">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+
+                    <li><a class="contest-title" href='/contests/abs'>AtCoder Beginners Selection</a></li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <img src='//img.atcoder.jp/assets/flag-lang/ja.png'> 日本語 <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href='/contests/abs/tasks/practice_1?lang=ja'><img src='//img.atcoder.jp/assets/flag-lang/ja.png'> 日本語</a></li>
+                            <li><a href='/contests/abs/tasks/practice_1?lang=en'><img src='//img.atcoder.jp/assets/flag-lang/en.png'> English</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> luthierBG (Contestant) <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href='/users/luthierBG'><span class="glyphicon glyphicon-user" aria-hidden="true"></span> マイプロフィール</a></li>
+                            <li class="divider"></li>
+                            <li><a href='/settings'><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> 基本設定</a></li>
+                            <li><a href='/settings/icon'><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> アイコン設定</a></li>
+                            <li><a href='/settings/password'><span class="glyphicon glyphicon-lock" aria-hidden="true"></span> パスワードの変更</a></li>
+
+
+                            <li class="divider"></li>
+                            <li><a href='javascript:void(form_logout.submit())'><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> ログアウト</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <form method="POST" name="form_logout" action='/logout?continue=https%3A%2F%2Fatcoder.jp%2Fcontests%2Fabs%2Ftasks%2Fpractice_1'>
+        <input type="hidden" name="csrf_token" value='Hq9yyjsR2l8wAyBO184/kvdDkLuQJaXvjC9Ou8HbrlU=' />
+    </form>
+    <div id="main-container" class="container" style="padding-top:50px;">
+
+
+        <div class="row">
+            <div id="contest-nav-tabs" class="col-sm-12 mb-2 cnvtb-fixed">
+                <div>
+                    <small class="contest-duration">コンテスト時間: <a href='http://www.timeanddate.com/worldclock/fixedtime.html?iso=20180314T1200&p1=248' target='blank'><time class='fixtime fixtime-full'>2018-03-14 12:00:00+0900</time></a> ~ <a href='http://www.timeanddate.com/worldclock/fixedtime.html?iso=40180314T2100&p1=248' target='blank'><time class='fixtime fixtime-full'>4018-03-14 21:00:00+0900</time></a> </small>
+                    <small class="back-to-home pull-right"><a href='/'>AtCoderホームへ戻る</a></small>
+                </div>
+                <ul class="nav nav-tabs">
+                    <li><a href='/contests/abs'><span class="glyphicon glyphicon-home" aria-hidden="true"></span> トップ</a></li>
+
+                    <li class="active"><a href='/contests/abs/tasks'><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 問題</a></li>
+
+
+
+                    <li><a href='/contests/abs/clarifications'><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> 質問 <span id="clar-badge" class="badge"></span></a></li>
+
+
+
+                    <li><a href='/contests/abs/submit?taskScreenName=practice_1'><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 提出</a></li>
+
+
+
+                    <li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> 提出一覧<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href='/contests/abs/submissions'><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> すべての提出</a></li>
+                            <li><a href='/contests/abs/submissions/me'><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 自分の提出</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li><a href='/contests/abs/standings'><span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span> 順位表</a></li>
+
+
+
+                    <li><a href='/contests/abs/custom_test'><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> コードテスト</a></li>
+
+
+
+
+                    <li class="pull-right"><a id="fix-cnvtb" href="javascript:void(0)"><span class="glyphicon glyphicon-pushpin" aria-hidden="true"></span></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-12">
+                <span class="h2">PracticeA - Welcome to AtCoder</span>
+                <hr/>
+                <p>実行時間制限: 2 sec / メモリ制限: 256 MB</p>
+
+                <div id="task-statement">
+			<span class="lang">
+  <span class="lang-ja">
+    <div class="part">
+      <section>
+	<h3>問題文</h3>
+        <p>
+          高橋君はデータの加工が行いたいです。
+	</p>
+	<p>
+	  整数 <var>a, b, c</var>と、文字列 <var>s</var> が与えられます。 <var>a + b + c</var> の計算結果と、文字列 <var>s</var> を並べて表示しなさい。
+        </p>
+      </section>
+    </div>
+
+    <div class="part">
+      <section>
+	<h3>制約</h3>
+	<ul>
+	  <li><var>1\leq a, b, c \leq 1,000</var></li>
+	  <li><var>1\leq</var><var>|s|</var><var>\leq 100</var></li>
+	</ul>
+      </section>
+    </div>
+
+    <hr/>
+
+    <div class="io-style">
+      <div class="part">
+	<section>
+	  <h3>入力</h3>
+          <p>
+            入力は以下の形式で与えられる。
+          </p>
+<pre>
+<var>a</var>
+<var>b</var> <var>c</var>
+<var>s</var>
+</pre>
+      </section>
+    </div>
+
+      <div class="part">
+	<section>
+          <h3>出力</h3>
+          <p>
+            <var>a+b+c</var> と <var>s</var> を空白区切りで <var>1</var> 行に出力せよ。
+          </p>
+	  <p>
+            <span style="color: red">また、出力の末尾には改行を入れること。</span>
+	  </p>
+	</section>
+      </div>
+    </div>
+
+    <hr/>
+
+    <div class="part">
+      <section>
+        <h3>入力例 1</h3>
+<pre>
+1
+2 3
+test
+</pre>
+      </section>
+    </div>
+
+    <div class="part">
+      <section>
+        <h3>出力例 1</h3>
+<pre>
+6 test
+</pre>
+            <ul>
+                <li> <var>1+2+3</var> は <var>6</var> なので、上記のように出力します。</li>
+            </ul>
+      </section>
+    </div>
+
+    <hr/>
+
+    <div class="part">
+      <section>
+        <h3>入力例 2</h3>
+<pre>
+72
+128 256
+myonmyon
+</pre>
+      </section>
+    </div>
+
+    <div class="part">
+      <section>
+	<h3>出力例 2</h3>
+<pre>
+456 myonmyon
+</pre>
+            <ul>
+                <li> <var>72+128+256</var> は <var>456</var> なので、上記のように出力します。</li>
+            </ul>
+      </section>
+    </div>
+
+    <hr />
+
+    <h3>注意！</h3>
+    <section>
+        <p>
+            <code>C</code>や<code>C++</code>を使うときは、<var>main</var> 関数の型を <var>int</var> で指定し、ちゃんと<code>return 0;</code>してください。
+        </p>
+        <p>
+            <code>Java</code>を使うときは、クラス名を<code>Main</code>にしてください。<code>main</code>ではコンパイルエラーになります。
+        </p>
+    </section>
+
+    <h3>補足</h3>
+    <section>
+        <p>
+            以下に各言語ごとの解答例を記載しています。
+        </p>
+        <ul>
+            <li><a href="#C">C</a></li>
+            <li><a href="#C++">C++</a></li>
+            <li><a href="#Java">Java</a></li>
+            <li><a href="#C#">C#</a></li>
+            <li><a href="#PHP">PHP</a></li>
+            <li><a href="#D">D</a></li>
+	    <li><a href="#Go">Go</a></li>
+            <li><a href="#Python2">Python2</a></li>
+            <li><a href="#Python3">Python3</a></li>
+            <li><a href="#Perl">Perl</a></li>
+            <li><a href="#Ruby">Ruby</a></li>
+            <li><a href="#Haskell">Haskell</a></li>
+            <li><a href="#Pascal">Pascal</a></li>
+            <li><a href="#JavaScript(Node.js)">JavaScript(Node.js)</a></li>
+            <li><a href="#Scala">Scala</a></li>
+        </ul>
+    </section>
+
+    <hr />
+
+    <h3 id="C">C での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+#include&lt;stdio.h&gt;
+int main()
+{
+    int a,b,c;
+    char s[101];
+    // 整数の入力
+    scanf("%d", &a);
+    // スペース区切りの整数の入力
+    scanf("%d %d",&b,&c);
+    // 文字列の入力
+    scanf("%s",s);
+    // 出力
+    printf("%d %s\n",a+b+c,s);
+    return 0;
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="C++">C++ での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+#include&lt;iostream&gt;
+using namespace std;
+int main()
+{
+    // 整数の入力
+    int a;
+    cin >> a;
+    // スペース区切りの整数の入力
+    int b,c;
+    cin >> b >> c;
+    // 文字列の入力
+    string s;
+    cin >> s;
+    // 出力
+    cout << (a+b+c) << " " << s << endl;
+    return 0;
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="Java">Java での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+import java.util.*;
+public class Main {
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		// 整数の入力
+		int a = sc.nextInt();
+		// スペース区切りの整数の入力
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		// 文字列の入力
+		String s = sc.next();
+		// 出力
+		System.out.println((a+b+c) + " " + s);
+	}
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="C#">C# での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+using System;
+class Program
+{
+	static void Main(string[] args)
+	{
+		// 整数の入力
+		int a = int.Parse(Console.ReadLine());
+		// スペース区切りの整数の入力
+		string[] input = Console.ReadLine().Split(' ');
+		int b = int.Parse(input[0]);
+		int c = int.Parse(input[1]);
+		// 文字列の入力
+		string s = Console.ReadLine();
+		//出力
+		Console.WriteLine((a+b+c) + " " + s);
+	}
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="PHP">PHP での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+&lt;?php
+# 整数の入力
+fscanf(STDIN, "%d", $a);
+# スペース区切りの整数の入力
+fscanf(STDIN, "%d %d", $b, $c);
+# 文字列の入力
+fscanf(STDIN, "%s", $s);
+# 出力
+echo ($a+$b+$c)." ".$s."\n";
+?&gt;
+</pre>
+    </section>
+    <hr />
+    <h3 id="D">D での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+import std.stdio;
+import std.string;
+import std.conv;
+void main()
+{
+	// 整数の入力
+	int a = to!int(chomp(readln()));
+	// スペース区切りの整数の入力
+	string[] input = split(readln());
+	int b = to!int(input[0]);
+	int c = to!int(input[1]);
+	// 文字列の入力
+	string s = chomp(readln());
+	// 出力
+	writefln("%d %s", a+b+c, s);
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="Go">Go での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var a, b, c int
+	var s string
+	fmt.Scanf("%d", &a)
+	fmt.Scanf("%d %d", &b, &c)
+	fmt.Scanf("%s", &s)
+	fmt.Printf("%d %s\n", a+b+c, s)
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="Python2">Python2 での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+# -*- coding: utf-8 -*-
+# 整数の入力
+a = int(raw_input())
+# スペース区切りの整数の入力
+b, c = map(int, raw_input().split())
+# 文字列の入力
+s = raw_input()
+# 出力
+print str(a+b+c) + " " + s
+</pre>
+    </section>
+    <hr />
+
+    <h3 id="Python3">Python3 での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+# -*- coding: utf-8 -*-
+# 整数の入力
+a = int(input())
+# スペース区切りの整数の入力
+b, c = map(int, input().split())
+# 文字列の入力
+s = input()
+# 出力
+print("{} {}".format(a+b+c, s))
+</pre>
+    </section>
+    <hr />
+    <h3 id="Perl">Perl での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+# 整数の入力
+my $a = &lt;STDIN&gt;;
+# スペース区切りの整数の入力
+my $input = &lt;STDIN&gt;;
+chomp $input;
+my ($b, $c) = split / /, $input;
+$ret = $a + $b + $c;
+# 文字列の入力
+my $s = &lt;STDIN&gt;;
+chomp $s;
+# 出力
+print "$ret $s\n";
+</pre>
+    </section>
+    <hr />
+    <h3 id="Ruby">Ruby での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+# 整数の入力
+a = gets.to_i
+# スペース区切りの整数の入力
+b,c=gets.chomp.split(" ").map(&:to_i);
+# 文字列の入力
+s = gets.chomp
+# 出力
+print("#{a+b+c} #{s}\n")
+</pre>
+    </section>
+    <hr />
+    <h3 id="Haskell">Haskell での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+{- お客様の中でHaskellを書ける方はいらっしゃいますか？
+    と、Haskellの例がなくて困っていたところを @tanakh さんに助けて頂きました。本当にありがとうございました。-}
+import Control.Applicative
+
+main :: IO ()
+main = do
+    -- 整数の入力
+    a <- readLn
+    -- スペース区切り整数の入力
+    [b, c] <- map read . words <$> getLine
+    -- 文字列の入力
+    s <- getLine
+    -- 出力
+    putStrLn $ show (a + b + c) ++ " " ++ s
+</pre>
+    </section>
+    <hr />
+    <h3 id="Pascal">Pascal での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+var
+    a, b, c : integer;
+    s : ShortString;
+begin
+    { 整数の入力 }
+    readln(a);
+    { スペース区切りの整数の入力 }
+    read(b);
+    readln(c);
+    { 文字列の入力 }
+    readln(s);
+    { 出力 }
+    writeln(a+b+c, ' ', s);
+end.</pre>
+    </section>
+    <hr />
+    <h3 id="JavaScript(Node.js)">JavaScript(Node.js) での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+// inputに入力データ全体が入る
+function Main(input) {
+	// 1行目がinput[0], 2行目がinput[1], …に入る
+	input = input.split("\n");
+	tmp = input[1].split(" ");
+	//文字列から10進数に変換するときはparseIntを使います
+	var a = parseInt(input[0], 10);
+	var b = parseInt(tmp[0], 10);
+	var c = parseInt(tmp[1], 10);
+	var s = input[2];
+	//出力
+	console.log('%d %s',a+b+c,s);
+}
+//*この行以降は編集しないでください（標準入出力から一度に読み込み、Mainを呼び出します）
+Main(require("fs").readFileSync("/dev/stdin", "utf8"));
+</pre>
+    </section>
+    <hr />
+    <h3 id="Scala">Scala での解答例</h3>
+    <section>
+<pre class="prettyprint linenums">
+// きーくん@_Floojual さん提供
+object Main extends App {
+    var a = readInt
+    var num = readLine
+    var s = readLine
+    var sum = a + num.split(" ")(0).toInt + num.split(" ")(1).toInt
+    println(sum + " " + s);
+}
+</pre>
+    </section>
+    </span>
+    <span class="lang-en">
+    <div class="part">
+        <h3>Problem</h3>
+        <section>
+            <p>
+                Your task is to process some data.<br>
+                You are given <var>3</var> integers <var>a</var> , <var>b</var> , <var>c</var> and a string <var>s</var>.
+                Output result of <var>a + b + c</var> and string <var>s</var> with a half-width break.
+            </p>
+        </section>
+    </div>
+
+    <div class="part">
+      <section>
+	<h3>Constrains</h3>
+	<ul>
+	  <li><var>1\leq a, b, c \leq 1,000</var></li>
+	  <li><var>1\leq</var><var>|s|</var><var>\leq 100</var></li>
+	</ul>
+      </section>
+    </div>
+
+    <hr/>
+
+    <div class="io-style part">
+        <h3>Input</h3>
+        <section>
+            <p>
+                Input will be given in the following format from Standard Input:
+            </p>
+<pre>
+<var>a</var>
+<var>b</var> <var>c</var>
+<var>s</var>
+</pre>
+        </section>
+    </div>
+    
+    <div class="part">
+        <h3>Output</h3>
+        <section>
+            <p>
+                Output the result of <var>a+b+c</var> and string <var>s</var> with a half-width break in one line.
+            </p>
+            <span style="color: red">
+                <p>
+                    Also, make sure to insert a line break at the end of the output.
+                </p>
+            </span>
+        </section>
+    </div>
+
+    <hr/>
+
+    <div class="part">
+      <section>
+        <h3>Input Example #1</h3>
+<pre>
+1
+2 3
+test
+</pre>
+        </section>
+    </div>
+
+    <div class="part">
+      <section>
+        <h3>Output Example #1</h3>
+<pre>
+6 test
+</pre>
+            <ul>
+                <li>
+                    <var>1+2+3</var> equals to <var>6</var>.
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <hr/>
+
+    <div class="part">
+      <section>
+      <h3>Input Example #2</h3>
+<pre>
+72
+128 256
+myonmyon
+</pre>
+        </section>
+    </div>
+
+    <div class="part">
+      <section>
+        <h3>Output Example #2</h3>
+<pre>
+456 myonmyon
+</pre>
+            <ul>
+                <li>
+                    <var>72+128+256</var> equals to <var>456</var>.
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <hr />
+
+    <h3>Notice</h3>
+    <section>
+        <p>
+            If you are <code>C</code> or <code>C++</code> programmer, please designate the types of <var>main</var> function as <code>int</code> and not to forget <code>return 0;</code> .
+        </p>
+        <p>
+            If you are <code>Java</code> programmer, please designate your class name as <code>Main</code>, not <code>main</code>.
+        </p>
+    </section>
+
+    <h3>References</h3>
+    <section>
+        <p>
+            We prepared some sample answers bellow (Not all programming languages).<br>
+            Please use these examples as reference.
+        </p>
+        <ul>
+            <li><a href="#C_en">C</a></li>
+            <li><a href="#C++_en">C++</a></li>
+            <li><a href="#Java_en">Java</a></li>
+            <li><a href="#C#_en">C#</a></li>
+            <li><a href="#PHP_en">PHP</a></li>
+            <li><a href="#D_en">D</a></li>
+	    <li><a href="#Go_en">Go</a></li>
+            <li><a href="#Python_en">Python</a></li>
+            <li><a href="#Perl_en">Perl</a></li>
+            <li><a href="#Ruby_en">Ruby</a></li>
+            <li><a href="#Haskell_en">Haskell</a></li>
+            <li><a href="#Pascal_en">Pascal</a></li>
+            <li><a href="#JavaScript(Node.js)_en">JavaScript(Node.js)</a></li>
+            <li><a href="#Scala_en">Scala</a></li>
+        </ul>
+    </section>
+
+    <hr />
+
+    <h3 id="C_en">Example of C</h3>
+    <section>
+<pre class="prettyprint linenums">
+#include&lt;stdio.h&gt;
+
+int main()
+{
+    int a,b,c;
+    char s[101];
+    // get a integer
+    scanf("%d", &a);
+    // get two integers separated half-width break
+    scanf("%d %d",&b,&c);
+    // get a string
+    scanf("%s",s);
+    // output
+    printf("%d %s\n",a+b+c,s);
+    return 0;
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="C++_en">Example of C++</h3>
+    <section>
+<pre class="prettyprint linenums">
+#include&lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    // get a integer
+    int a;
+    cin >> a;
+    // get two integers separated with half-width break
+    int b,c;
+    cin >> b >> c;
+    // get a string
+    string s;
+    cin >> s;
+    // output
+    cout << (a+b+c) << " " << s << endl;
+    return 0;
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="Java_en">Example of Java</h3>
+    <section>
+<pre class="prettyprint linenums">
+import java.util.*;
+public class Main {
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		// get a integer
+		int a = sc.nextInt();
+		// get two integers separated with half-width break
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		// get a string
+		String s = sc.next();
+		// output
+		System.out.println((a+b+c) + " " + s);
+	}
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="C#_en">Example of C#</h3>
+    <section>
+<pre class="prettyprint linenums">
+using System;
+class Program
+{
+	static void Main(string[] args)
+	{
+		// get a integer
+		int a = int.Parse(Console.ReadLine());
+		// get two integers separated with half-width break
+		string[] input = Console.ReadLine().Split(' ');
+		int b = int.Parse(input[0]);
+		int c = int.Parse(input[1]);
+		// get a string
+		string s = Console.ReadLine();
+		//output
+		Console.WriteLine((a+b+c) + " " + s);
+	}
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="PHP_en">Example of PHP</h3>
+    <section>
+<pre class="prettyprint linenums">
+&lt;?php
+# get a integer
+fscanf(STDIN, "%d", $a);
+# get two integers separated with half-width break
+fscanf(STDIN, "%d %d", $b, $c);
+# get a string
+fscanf(STDIN, "%s", $s);
+# output
+echo ($a+$b+$c)." ".$s."\n";
+?&gt;
+</pre>
+    </section>
+    <hr />
+    <h3 id="D_en">Example of D</h3>
+    <section>
+<pre class="prettyprint linenums">
+import std.stdio;
+import std.string;
+import std.conv;
+void main()
+{
+	// get a integer
+	int a = to!int(chomp(readln()));
+	// get two integers separated with half-width break
+	string[] input = split(readln());
+	int b = to!int(input[0]);
+	int c = to!int(input[1]);
+	// get a string
+	string s = chomp(readln());
+	// output
+	writefln("%d %s", a+b+c, s);
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="Go_en">Example of Go</h3>
+    <section>
+<pre class="prettyprint linenums">
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var a, b, c int
+	var s string
+	fmt.Scanf("%d", &a)
+	fmt.Scanf("%d %d", &b, &c)
+	fmt.Scanf("%s", &s)
+	fmt.Printf("%d %s\n", a+b+c, s)
+}
+</pre>
+    </section>
+    <hr />
+    <h3 id="Python_en">Example of Python</h3>
+    <section>
+<pre class="prettyprint linenums">
+# -*- coding: utf-8 -*-
+# get a integer
+a = int(raw_input())
+# get two integers separated with half-width break
+b, c = map(int, raw_input().split())
+# get a string
+s = raw_input()
+# output
+print str(a+b+c) + " " + s
+</pre>
+    </section>
+    <hr />
+    <h3 id="Perl_en">Example of Perl</h3>
+    <section>
+<pre class="prettyprint linenums">
+# get a integer
+my $a = &lt;STDIN&gt;;
+# get two integers separated with half-width break
+my $input = &lt;STDIN&gt;;
+chomp $input;
+my ($b, $c) = split / /, $input;
+$ret = $a + $b + $c;
+# get a string
+my $s = &lt;STDIN&gt;;
+chomp $s;
+# output
+print "$ret $s\n";
+</pre>
+    </section>
+    <hr />
+    <h3 id="Ruby_en">Example of Ruby</h3>
+    <section>
+<pre class="prettyprint linenums">
+# get a integer
+a = gets.to_i
+# get two integers separated with half-width break
+b,c=gets.chomp.split(" ").map(&:to_i);
+# get a string
+s = gets.chomp
+# output
+print("#{a+b+c} #{s}\n")
+</pre>
+    </section>
+    <hr />
+    <h3 id="Haskell_en">Example of Haskell</h3>
+    <section>
+<pre class="prettyprint linenums">
+{- supportedby @tanakh -}
+import Control.Applicative
+main :: IO ()
+main = do
+    -- get a integer
+    a <- readLn
+    -- get two integers separated with half-width break
+    [b, c] <- map read . words <$> getLine
+    -- get a string
+    s <- getLine
+    -- output
+    putStrLn $ show (a + b + c) ++ " " ++ s
+</pre>
+    </section>
+    <hr />
+    <h3 id="Pascal_en">Example of Pascal</h3>
+    <section>
+<pre class="prettyprint linenums">
+var
+    a, b, c : integer;
+    s : ShortString;
+begin
+    { get a integer }
+    readln(a);
+    { get two integers separated with half-width break }
+    read(b);
+    readln(c);
+    { get a string }
+    readln(s);
+    { output }
+    writeln(a+b+c, ' ', s);
+end.</pre>
+    </section>
+    <hr />
+    <h3 id="JavaScript(Node.js)_en">Example of JavaScript(Node.js)</h3>
+    <section>
+<pre class="prettyprint linenums">
+// parameter "input" gets all data
+function Main(input) {
+	// the first line is assigned to input[0], the second line is assigned to input[1] similarly.
+	input = input.split("\n");
+	tmp = input[1].split(" ");
+	// convert string from integer using "parseInt"
+	var a = parseInt(input[0], 10);
+	var b = parseInt(tmp[0], 10);
+	var c = parseInt(tmp[1], 10);
+	var s = input[2];
+	//output
+	console.log('%d %s',a+b+c,s);
+}
+// Don't edit this line!
+Main(require("fs").readFileSync("/dev/stdin", "utf8"));
+</pre>
+    </section>
+    <hr />
+    <h3 id="Scala_en">Example of Scala</h3>
+    <section>
+<pre class="prettyprint linenums">
+// supported by @_Floojual
+object Main extends App {
+    var a = readInt
+    var num = readLine
+    var s = readLine
+    var sum = a + num.split(" ")(0).toInt + num.split(" ")(1).toInt
+    println(sum + " " + s);
+}
+</pre>
+    </section>
+    </span>
+</span>
+
+                </div>
+
+
+
+
+                <hr/>
+                <form class="form-horizontal" action='/contests/abs/submit' method="POST">
+                    <input type="hidden" name="data.TaskScreenName" value='practice_1' />
+
+                    <div class="form-group ">
+                        <label class="control-label col-sm-2" for="select-lang">言語</label>
+                        <div id="select-lang" class="col-sm-5" data-name='data.LanguageId'>
+                            <select class="form-control current" name='data.LanguageId'>
+
+                                <option value='3003' data-mime='text/x-c&#43;&#43;src'>C&#43;&#43;14 (GCC 5.4.1)</option>
+
+                                <option value='3001' data-mime='text/x-sh'>Bash (GNU bash v4.3.11)</option>
+
+                                <option value='3002' data-mime='text/x-csrc'>C (GCC 5.4.1)</option>
+
+                                <option value='3004' data-mime='text/x-csrc'>C (Clang 3.8.0)</option>
+
+                                <option value='3005' data-mime='text/x-c&#43;&#43;src'>C&#43;&#43;14 (Clang 3.8.0)</option>
+
+                                <option value='3006' data-mime='text/x-csharp'>C# (Mono 4.6.2.0)</option>
+
+                                <option value='3007' data-mime='text/x-clojure'>Clojure (1.8.0)</option>
+
+                                <option value='3008' data-mime='text/x-common-lisp'>Common Lisp (SBCL 1.1.14)</option>
+
+                                <option value='3009' data-mime='text/x-d'>D (DMD64 v2.070.1)</option>
+
+                                <option value='3010' data-mime='text/x-d'>D (LDC 0.17.0)</option>
+
+                                <option value='3011' data-mime='text/x-d'>D (GDC 4.9.4)</option>
+
+                                <option value='3012' data-mime='text/x-fortran'>Fortran (gfortran v4.8.4)</option>
+
+                                <option value='3013' data-mime='text/x-go'>Go (1.6)</option>
+
+                                <option value='3014' data-mime='text/x-haskell'>Haskell (GHC 7.10.3)</option>
+
+                                <option value='3015' data-mime='text/x-java'>Java7 (OpenJDK 1.7.0)</option>
+
+                                <option value='3016' data-mime='text/x-java'>Java8 (OpenJDK 1.8.0)</option>
+
+                                <option value='3017' data-mime='text/javascript'>JavaScript (node.js v5.12)</option>
+
+                                <option value='3018' data-mime='text/x-ocaml'>OCaml (4.02.3)</option>
+
+                                <option value='3019' data-mime='text/x-pascal'>Pascal (FPC 2.6.2)</option>
+
+                                <option value='3020' data-mime='text/x-perl'>Perl (v5.18.2)</option>
+
+                                <option value='3021' data-mime='text/x-php'>PHP (5.6.30)</option>
+
+                                <option value='3022' data-mime='text/x-python'>Python2 (2.7.6)</option>
+
+                                <option value='3023' data-mime='text/x-python'>Python3 (3.4.3)</option>
+
+                                <option value='3024' data-mime='text/x-ruby'>Ruby (2.3.3)</option>
+
+                                <option value='3025' data-mime='text/x-scala'>Scala (2.11.7)</option>
+
+                                <option value='3026' data-mime='text/x-scheme'>Scheme (Gauche 0.9.3.3)</option>
+
+                                <option value='3027' data-mime='text/plain'>Text (cat)</option>
+
+                                <option value='3028' data-mime='text/x-vb'>Visual Basic (Mono 4.0.1)</option>
+
+                                <option value='3501' data-mime='text/x-objectivec'>Objective-C (GCC 5.3.0)</option>
+
+                                <option value='3502' data-mime='text/x-objectivec'>Objective-C (Clang3.8.0)</option>
+
+                                <option value='3503' data-mime='text/x-swift'>Swift (swift-2.2-RELEASE)</option>
+
+                                <option value='3504' data-mime='text/x-rust'>Rust (1.15.1)</option>
+
+                                <option value='3505' data-mime='text/x-sh'>Sed (GNU sed 4.2.2)</option>
+
+                                <option value='3506' data-mime='text/x-sh'>Awk (mawk 1.3.3)</option>
+
+                                <option value='3507' data-mime='text/x-brainfuck'>Brainfuck (bf 20041219)</option>
+
+                                <option value='3508' data-mime='text/x-sml'>Standard ML (MLton 20100608)</option>
+
+                                <option value='3509' data-mime='text/x-python'>PyPy2 (5.6.0)</option>
+
+                                <option value='3510' data-mime='text/x-python'>PyPy3 (2.4.0)</option>
+
+                                <option value='3511' data-mime='text/x-crystal'>Crystal (0.20.5)</option>
+
+                                <option value='3512' data-mime='text/x-fsharp'>F# (Mono 4.0)</option>
+
+                                <option value='3513' data-mime='text/x-unlambda'>Unlambda (0.1.3)</option>
+
+                                <option value='3514' data-mime='text/x-lua'>Lua (5.3.2)</option>
+
+                                <option value='3515' data-mime='text/x-lua'>LuaJIT (2.0.4)</option>
+
+                                <option value='3516' data-mime='text/x-moonscript'>MoonScript (0.5.0)</option>
+
+                                <option value='3517' data-mime='text/x-ceylon'>Ceylon (1.2.1)</option>
+
+                                <option value='3518' data-mime='text/x-julia'>Julia (0.5.0)</option>
+
+                                <option value='3519' data-mime='text/x-octave'>Octave (4.0.2)</option>
+
+                                <option value='3520' data-mime='text/x-nim'>Nim (0.13.0)</option>
+
+                                <option value='3521' data-mime='text/typescript'>TypeScript (2.1.6)</option>
+
+                                <option value='3522' data-mime='text/x-perl'>Perl6 (rakudo-star 2016.01)</option>
+
+                                <option value='3523' data-mime='text/x-kotlin'>Kotlin (1.0.0)</option>
+
+                                <option value='3524' data-mime='text/x-php'>PHP7 (7.0.15)</option>
+
+                            </select>
+                            <span class="error"></span>
+                        </div>
+                    </div>
+                    <script>var currentLang = getLS('defaultLang');</script>
+
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for='sourceCode'>ソースコード</label>
+                        <div class="col-sm-7" id='sourceCode'>
+                            <div class="div-editor">
+                                <textarea class="form-control editor" name='sourceCode'></textarea>
+                            </div>
+                            <textarea class="form-control plain-textarea" style="display:none;"></textarea>
+                            <p>
+                                <span class="gray">※ 512 KiB まで</span><br>
+                                <span class="gray">※ ソースコードは「Main.<i>拡張子</i>」で保存されます</span>
+                            </p>
+                        </div>
+                        <div class="col-sm-3 editor-buttons">
+                            <p><button id="btn-open-file" type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> &nbsp; ファイルを開く
+                            </button></p>
+                            <p><button type="button" class="btn btn-default btn-sm btn-toggle-editor" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                エディタ切り替え
+                            </button></p>
+                            <p><button type="button" class="btn btn-default btn-sm btn-auto-height" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                高さ自動調節
+                            </button></p>
+                        </div>
+                        <input id="input-open-file" type="file" style="display:none;">
+                    </div>
+
+                    <input type="hidden" name="csrf_token" value='Hq9yyjsR2l8wAyBO184/kvdDkLuQJaXvjC9Ou8HbrlU=' />
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="submit"></label>
+                        <div class="col-sm-5">
+                            <button type="submit" class="btn btn-primary" id="submit">提出</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+
+        <hr>
+
+
+
+        <div class="a2a_kit a2a_kit_size_20 a2a_default_style pull-right" data-a2a-url="https://atcoder.jp/contests/abs/tasks/practice_1?lang=ja" data-a2a-title="PracticeA - Welcome to AtCoder">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+
+            <a class="a2a_button_hatena"></a>
+
+            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+        </div>
+
+
+        <script async src="//static.addtoany.com/menu/page.js"></script>
+
+    </div>
+    <hr>
+</div>
+<div class="container">
+    <footer class="footer">
+
+        <ul>
+            <li><a href='/contests/abs/rules'>ルール</a></li>
+            <li><a href='/contests/abs/glossary'>用語集</a></li>
+
+        </ul>
+
+        <ul>
+            <li><a href='/tos'>利用規約</a></li>
+            <li><a href='/privacy'>プライバシーポリシー</a></li>
+            <li><a href='/personal'>個人情報保護方針</a></li>
+            <li><a href='/company'>企業情報</a></li>
+            <li><a href='/faq'>よくある質問</a></li>
+            <li><a href='/contact'>お問い合わせ</a></li>
+            <li><a href='/documents/request'>資料請求</a></li>
+        </ul>
+        <div class="text-center">
+            <small id="copyright">Copyright Since 2012 &copy;<a href="http://atcoder.co.jp">AtCoder Inc.</a> All rights reserved.</small>
+        </div>
+    </footer>
+</div>
+<p id="fixed-server-timer" class='contest-timer'></p>
+
+<div id="scroll-page-top" style="display:none;"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> ページトップ</div>
+
+</body>
+</html>
+
